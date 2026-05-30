@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Insight Crew | AI Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <span class="highlight">Startup</span>Insight
+            </div>
+            <div class="tagline">The Multi-Agent Analysis Suite</div>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <div class="glass-card">
+                    <h2>Enter Your Startup Idea</h2>
+                    <p class="subtitle">Our specialized AI agents will analyze every aspect of your vision.</p>
+                    <textarea id="idea-input"
+                        placeholder="e.g., A peer-to-peer rental marketplace for high-end camera gear..."></textarea>
+                    <button id="analyze-btn">
+                        <span class="btn-text">Generate Analysis</span>
+                        <div class="loader-inline" id="btn-loader"></div>
+                    </button>
+                </div>
+            </section>
+
+            <section id="results-section" class="hidden">
+                <div class="executive-summary glass-card">
+                    <div class="card-header">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Executive Investment Memo</h3>
+                    </div>
+                    <div id="summary-content" class="markdown-body"></div>
+                </div>
+
+                <div class="agent-insights">
+                    <div class="tabs">
+                        <button class="tab-link active" data-tab="0">Market Research</button>
+                        <button class="tab-link" data-tab="1">Technical Feasibility</button>
+                        <button class="tab-link" data-tab="2">Monetization</button>
+                        <button class="tab-link" data-tab="3">Risk Audit</button>
+                        <button class="tab-link" data-tab="4">Final Synthesis</button>
+                    </div>
+                    <div class="tab-content glass-card">
+                        <div id="tab-pane-content" class="markdown-body">
+                            <!-- Content injected here -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <section id="loading-overlay" class="hidden">
+                    <div class="loading-content">
+                        <div class="spinner-large"></div>
+                        <h3>The Crew is Assembling...</h3>
+                        <p>Coordinating agents to validate your vision. This may take a minute.</p>
+                    </div>
+                </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Startup Insight Crew. Powered by CrewAI & FastAPI.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
