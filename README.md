@@ -4,12 +4,6 @@ An intelligent multi-agent system built with **CrewAI** and **Groq LLaMA** that 
 
 ---
 
-## Live Demo
-
-**Live Link:** _Coming soon — will be updated after deployment_
-
----
-
 ## What It Does
 
 Enter any startup idea and a crew of specialized AI agents analyzes it in parallel:
